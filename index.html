@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>my-fremawork</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+
+    <div class="top_fixed">
+        <button data-popup=".popup_1" class="btn">start popup 1</button>
+        <button data-popup=".popup_1" class="btn">start popup 1</button>
+        <button data-popup=".popup_2" class="btn">start popup 2</button>
+        <button data-popup=".popup_3" class="btn">start popup 3</button>
+        <button data-popup=".popup_4" class="btn">start popup 4</button>
+        <a class="" href="#gold">gold</a>
+        <a class="" href="#teal">teal</a>
+        <a href="#pink">pink</a>
+        <a href="#antiquewhite">antiquewhite</a>
+    </div>
+
+    <!-- popup template -->
+    <button data-popup=".popup_1" class="btn">start popup 1</button>
+    <div class="popup popup_1 popup-width--mobile">
+        <header class="popup__header">
+            <span>Загаловок попапа</span>
+            <button class="popup__btn__close"></button>
+        </header>
+        <main class="popup__main">
+            <h2 class="popup__title">title popup_1</h2>
+            <p class="popup__subtitle">
+                Мы подберем спортивные базы и услуги и свяжемся c Вами
+            </p>
+            <p>some text</p>
+        </main>
+        <footer class="popup__footer">
+            <button class="popup__footer__btn__ok">Ok</button>
+        </footer>
+    </div>
+    <div class="overlay"></div>
+    <!-- end popup template -->
+
+    <div class="popup popup_2 popup-width--mobile">
+        <header class="popup__header">
+            <span>Загаловок попапа</span>
+            <button class="popup__btn__close"></button>
+        </header>
+        <main class="popup__main">
+            <h2 class="popup__title">title popup_2</h2>
+            <p class="popup__subtitle">
+                Мы подберем спортивные базы и услуги и свяжемся c Вами
+            </p>
+            <p>some text</p>
+        </main>
+        <footer class="popup__footer">
+            <button class="popup__footer__btn__ok">Ok</button>
+        </footer>
+    </div>
+    <div class="popup popup_3 popup-width--tablet">
+        <header class="popup__header">
+            <span>Загаловок попапа</span>
+            <button class="popup__btn__close"></button>
+        </header>
+        <main class="popup__main">
+            <h2 class="popup__title">title popup_3</h2>
+            <p class="popup__subtitle">
+                Мы подберем спортивные базы и услуги и свяжемся c Вами
+            </p>
+            <p>some text</p>
+        </main>
+        <footer class="popup__footer">
+            <button class="popup__footer__btn__ok">Ok</button>
+        </footer>
+    </div>
+    <div class="popup popup_4 popup-width--mobile">
+        <header class="popup__header">
+            <span>Загаловок попапа</span>
+            <button class="popup__btn__close"></button>
+        </header>
+        <main class="popup__main">
+            <h2 class="popup__title">title popup_4</h2>
+            <p class="popup__subtitle">
+                Мы подберем спортивные базы и услуги и свяжемся c Вами
+            </p>
+            <p>some text</p>
+            <div style="height: 300px; background: limegreen;"></div>
+            <div style="height: 300px; background: limegreen;"></div>
+            <div style="height: 300px; background: gold;"></div>
+            <div style="height: 150px; background: plum;"></div>
+        </main>
+        <footer class="popup__footer">
+            <button class="popup__footer__btn__ok">Ok</button>
+        </footer>
+    </div>
+
+    <!-- accardion template -->
+    <div class="accardion">
+        <button class="accardion__title open">accardion__title__1</button>
+        <button class="accardion__title">accardion__title__2</button>
+        <button class="accardion__title">accardion__title__3</button>
+        <button class="accardion__title">accardion__title__4</button>
+        <button class="accardion__title">accardion__title__5</button>
+
+        <div class="accardion__content open">accardion__content__1</div>
+        <div class="accardion__content">accardion__content__2</div>
+        <div class="accardion__content">accardion__content__3</div>
+        <div class="accardion__content">accardion__content__4</div>
+        <div class="accardion__content">accardion__content__5</div>
+    </div>
+    <!-- /.accardion -->
+
+    <!-- scroll_top template -->
+    <a href="" class="scroll_top">go in top</a>
+    <!-- /.scroll_top -->
+
+    <!-- qwiz template -->
+    <div class="qwiz">
+        <header class="qwiz__header">
+            <div class="qwiz__titile">qwiz__title1</div>
+            <div class="qwiz__subtitle">qwiz__subtitle1</div>
+            <div class="qwiz__progress"></div>
+        </header>
+
+        <main class="qwiz__main">
+            <div class="qwiz__step step_1 active_step">
+                <div class="qwiz__qwest qwiz__range">
+                    <div class="qwiz__qwest__title">
+                        <span class="qwest">Количество экранов/блоков</span><span class="answer__number"></span><span
+                            class="answer__text">экранов</span>
+                    </div>
+                    <input type="range" name="range" class="qwiz__range__input-range input-range">
+                </div>
+                <div class="qwiz__qwest qwiz__check">
+                    <label class="qwiz__check__label">
+                        <input type="checkbox" name="" class="qwiz__check__input-checkbox input-checkbox">
+                        <span class="qwiz__check__span">Текствыа выаа выа ыва </span>
+                    </label>
+                </div>
+                <div class="qwiz__qwest qwiz__check">
+                    <label class="qwiz__check__label">
+                        <input type="checkbox" name="" class="qwiz__check__input-checkbox input-checkbox">
+                        <span class="qwiz__check__span">Текствыа выаа выа ыва </span>
+                    </label>
+                </div>
+                <div class="qwiz__qwest qwiz__check">
+                    <label class="qwiz__check__label">
+                        <input type="checkbox" name="" class="qwiz__check__input-checkbox input-checkbox">
+                        <span class="qwiz__check__span">Текствыа выаа выа ыва </span>
+                    </label>
+                </div>
+                <div class="qwiz__price__description--small">Дополнительно <span class="calc_price__added">0</span>
+                    рублей
+                </div>
+                <div class="qwiz__price__description--small">Дополнительно <span class="calc_price__1screen">0</span>
+                    рублей
+                </div>
+                <div class="qwiz__price__description">Дополнительно <span class="calc_price__summ">0</span> рублей</div>
+            </div>
+            <div class="qwiz__step step_2">
+                <div class="qwiz__qwest">
+                    <div class="qwiz__qwest__title">
+                        <span class="qwest">Кто вы?</span>
+                    </div>
+                </div>
+                <div class="qwiz__qwest qwiz__radio">
+                    <label class="qwiz__radio__label">
+                        <input type="radio" name="who_client" class="qwiz__radio__input-radio input-radio">
+                        <span class="qwiz__radio__span">Текствыа выаа выа ыва </span>
+                    </label>
+                </div>
+                <div class="qwiz__qwest qwiz__radio">
+                    <label class="qwiz__radio__label">
+                        <input type="radio" name="who_client" class="qwiz__radio__input-radio input-radio">
+                        <span class="qwiz__radio__span">Текствыа выаа выа ыва </span>
+                    </label>
+                </div>
+                <div class="qwiz__qwest qwiz__radio">
+                    <label class="qwiz__radio__label">
+                        <input type="radio" name="who_client" class="qwiz__radio__input-radio input-radio">
+                        <span class="qwiz__radio__span">Текствыа выаа выа ыва </span>
+                    </label>
+                </div>
+                <div class="qwiz__qwest qwiz__radio">
+                    <label class="qwiz__radio__label">
+                        <input type="radio" name="who_client" class="qwiz__radio__input-radio input-radio">
+                        <span class="qwiz__radio__span">Текствыа выаа выа ыва </span>
+                    </label>
+                </div>
+            </div>
+            <div class="qwiz__step step_3">
+                <div class="qwiz__qwest">
+                    <div class="qwiz__qwest__title">
+                        <span class="qwest">Есть ли макеты адаптивной версии сайта?</span>
+                    </div>
+                </div>
+                <div class="qwiz__qwest qwiz__radio">
+                    <label class="qwiz__radio__label">
+                        <input type="radio" name="mobile_psd" class="qwiz__radio__input-radio input-radio">
+                        <span class="qwiz__radio__span">Есть</span>
+                    </label>
+                </div>
+                <div class="qwiz__qwest qwiz__radio">
+                    <label class="qwiz__radio__label">
+                        <input type="radio" name="mobile_psd" class="qwiz__radio__input-radio input-radio">
+                        <span class="qwiz__radio__span">Нет</span>
+                    </label>
+                </div>
+            </div>
+            <div class="qwiz__step step_4">
+                <div class="qwiz__qwest qwiz__range">
+                    <div class="qwiz__qwest__title">
+                        <span class="qwest">Какие сроки</span><span class="answer__number"></span><span
+                            class="answer__text">дней</span>
+                    </div>
+                    <input type="range" name="range" class="qwiz__range__input-range input-range">
+                </div>
+            </div>
+            <div class="qwiz__step step_5">
+                <div class="qwiz__qwest">
+                    <div class="qwiz__qwest__title">
+                        <span class="qwest">Вставьте ссылку на макеты с облачного диска (не обязательно)</span>
+                    </div>
+                </div>
+                <div class="qwiz__qwest">
+                    <label class="qwiz__input--text__label">
+                        <input type="text" name="mobile_psd" class="qwiz__input--text input-text">
+                    </label>
+                </div>
+            </div>
+            <div class="qwiz__step step_6">
+                <div class="qwiz__qwest">
+                    <div class="qwiz__qwest__title">
+                        <span class="qwest">Дополнительные работы?</span>
+                    </div>
+                </div>
+                <div class="qwiz__qwest qwiz__radio">
+                    <label class="qwiz__radio__label">
+                        <input type="radio" name="added_work" class="qwiz__radio__input-radio input-radio">
+                        <span class="qwiz__radio__span">11111</span>
+                    </label>
+                </div>
+                <div class="qwiz__qwest qwiz__radio">
+                    <label class="qwiz__radio__label">
+                        <input type="radio" name="added_work" class="qwiz__radio__input-radio input-radio">
+                        <span class="qwiz__radio__span">22222</span>
+                    </label>
+                </div>
+            </div>
+            <div class="qwiz__step step_7">
+                <div class="qwiz__qwest">
+                    <div class="qwiz__qwest__title">
+                        <span class="qwest">Опишите техническое задание, если его нет на диске</span>
+                    </div>
+                </div>
+                <div class="qwiz__qwest">
+                    <label class="qwiz__input--textarea__label">
+                        <textarea name="technical_task" class="qwiz__input--textarea input-textarea"
+                            placeholder="dfsdfs например"></textarea>
+                    </label>
+                </div>
+            </div>
+            <div class="qwiz__step step_8 step_final">
+                <div class="qwiz__qwest">
+                    <div class="qwiz__qwest__title">
+                        <span>Спасибо за ответы</span>
+                    </div>
+                    <div class="qwiz__qwest__subtitle">
+                        <span>Получите результат расчета, оставив контактный телефон или ссылку на соц.сети</span>
+                    </div>
+                </div>
+                <div class="qwiz__qwest">
+                    <label class="qwiz__input--text__label">
+                        <input type="text" name="mobile_psd" class="qwiz__input--text input-text">
+                    </label>
+                </div>
+                <div class="qwiz__qwest">
+                    <button>Узнать стоимость</button>
+                </div>
+                <div class="qwiz__qwest">
+                    <p class="qwiz__qwest__policy">
+                        Нажимая "Узнать стоимость", вы соглашаетесь с <a href="">политикой конфиденциальности</a>
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="qwiz__footer">
+            <button class="qwiz__btn__prev">prev</button>
+            <button class="qwiz__btn__next">next</button>
+        </footer>
+    </div>
+    <!-- /.qwiz -->
+
+
+
+    <div style="height: 300px; background: pink;" id="pink"></div>
+    <div style="height: 300px; background: limegreen;" id="limegreen"></div>
+    <div style="height: 300px; background: antiquewhite;" id="antiquewhite"></div>
+    <div style="height: 300px; background: rgb(198, 224, 216);"></div>
+    <div style="height: 300px; background: goldenrod;" id="goldenrod"></div>
+    <div style="height: 300px; background: gold;" id="gold"></div>
+    <div style="height: 300px; background: greenyellow;" id="greenyellow"></div>
+    <div style="height: 300px; background: powderblue;" id="powderblue"></div>
+    <div style="height: 300px; background: palegreen;" id="palegreen">palegreen</div>
+    <div style="height: 300px; background: plum;" id="plum"></div>
+    <div style="height: 300px; background: teal;" id="teal"></div>
+
+    <footer class="footer">
+        <div style="height: 300px; background: plum;" id="plum2">footer</div>
+    </footer>
+
+    <script type="module" defer src="./js/main.js"></script>
+
+</body>
+
+</html>
