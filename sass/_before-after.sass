@@ -1,0 +1,67 @@
+.before-after-horizontal
+  background-color: #ffffff
+  background-image: url('../img/mandarin.jpg')
+  background-position: center center
+  background-size: cover
+  background-repeat: no-repeat
+  position: relative
+
+  &:active
+    cursor: nesw-resize
+
+  .before
+    min-height: 350px
+    overflow: hidden
+    position: relative
+    width: 50%
+    
+    img
+      display: block
+      width: 100%
+
+    .drag
+      background-color: #ffffff
+      border: 0
+      cursor: nesw-resize
+      height: 100%
+      padding: 0
+      position: absolute
+      right: 0
+      top: 0
+      width: 5px
+
+.before-after-vertical
+  background-color: #ffffff
+  background-image: url('../img/mandarin.jpg')
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  height: 400px
+  position: relative
+  width: 400px
+
+  &:active
+    cursor: nesw-resize
+
+  .before
+    height: 50%
+    overflow: hidden
+    position: relative
+    width: 100%
+    
+    img
+      display: block
+      height: 400px
+      object-fit: cover
+      width: 100%
+
+    .drag
+      background-color: #ffffff
+      border: 0
+      cursor: nesw-resize
+      height: 5px
+      padding: 0
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 100%

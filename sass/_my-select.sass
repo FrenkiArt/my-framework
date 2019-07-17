@@ -1,0 +1,103 @@
+.my-select
+  color: #000000
+  font-size: 16px
+  font-weight: 500
+  max-width: 100%
+  position: relative
+  width: 100%
+
+  img
+    max-width: 100%
+
+  &.open
+    .my-select__trigger
+
+      &::after
+        transform: translate(0px, -50%) rotate(180deg)
+
+      &__text
+        color: #000000
+
+      &__img
+        transform: rotate(180deg)
+
+    .my-select__list
+      max-height: 5000px
+      opacity: 1
+
+      &__option
+        display: block
+
+  .my-select__trigger
+    align-items: center
+    background-color: aqua
+    border: 0px solid transparent
+    cursor: pointer
+    display: flex
+    justify-content: space-between
+    line-height: 100%
+    margin: 0
+    max-width: 100%
+    outline: 0px solid transparent
+    padding: 0
+    position: relative
+    text-decoration: none
+    width: 100%
+
+    &::after
+      background-color: brown
+      content: '⮟'
+      font-size: 40px
+      height: 30px
+      line-height: 30px
+      position: absolute
+      right: 40px
+      top: 50%
+      transform: translate(0px, -50%)
+      transition: transform .3s
+      width: 30px
+
+    &__text
+      color: #000000
+
+    &__img
+      background-color: lime
+      font-size: 40px
+      height: 30px
+      line-height: 30px
+      transition: transform .3s
+      width: 30px
+
+  .my-select__list
+    background-color: yellow
+    list-style-type: none
+    margin: 0
+    max-height: 0px
+    opacity: 0
+    overflow: hidden
+    position: absolute
+    transition: max-height .7s, opacity .3s
+    width: 100%
+    z-index: 1
+
+  .my-select__list__option
+    cursor: pointer
+    display: none
+
+    &:hover
+      background-color: gold
+
+    input
+      &[type='radio']
+        color: transparent
+        display: none
+
+        &:checked
+          color: #ffffff
+
+        &:checked~.text
+          background-color: orange
+          color: red
+
+    .text
+      color: #000000
