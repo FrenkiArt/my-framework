@@ -23,6 +23,9 @@ import {
 import {
     leftSidebar
 } from './left-sidebar.js'
+import {
+    artyworkSlider
+} from './my-slider.js'
 
 /* start our popups */
 myPopup(document.querySelectorAll('.btn'));
@@ -38,6 +41,7 @@ beforeAfterHorizontal(document.querySelector('.before-after-horizontal'));
 beforeAfterVertical(document.querySelector('.before-after-vertical'));
 
 leftSidebar(document.querySelector('#sidebarTriger'), document.querySelector('.side_bar'));
+artyworkSlider(document.querySelector('.my_slider'));
 
 
 

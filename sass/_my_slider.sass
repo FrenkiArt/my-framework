@@ -1,0 +1,84 @@
+.my_slider
+  overflow: hidden
+  position: relative
+  &__wrap_list
+    display: flex
+    list-style-type: none
+    margin: 0
+    padding: 0
+    transform: translate(0px, 0)
+    transition: transform 0.5s linear
+    &.breezy
+      transition: transform 0s linear
+  &__slide
+    cursor: grab
+    height: 500px
+    min-width: 100%
+    width: 100%
+    &:active
+      cursor: grabbing
+    img
+      display: block
+      max-width: 100%
+      object-fit: cover
+      width: 100%
+  .btn_arrow
+    background-color: orange
+    border-radius: 100%
+    border: 0
+    color: #ffffff
+    cursor: pointer
+    filter: drop-shadow(0,0,2px,rgba(0,0,0,.5))
+    font-size: 50px
+    height: 50px
+    outline: 0 solid transparent
+    padding: 0
+    position: absolute
+    top: 50%
+    transform: translate(0, -50%)
+    width: 50px
+    &:disabled
+      opacity: 0.5
+      cursor: not-allowed
+    &:active
+      transform: translate(0, -47%)
+    &__right
+      right: 10px
+    &__left
+      left: 10px
+  .bullets
+    bottom: 30px
+    display: flex
+    left: 50%
+    list-style-type: none
+    margin: 0
+    padding: 0
+    position: absolute
+    transform: translate(-50%, 0)
+
+    .bullet
+      background-color: #ffffff
+      border-radius: 100%
+      cursor: pointer
+      font-size: 16px
+      height: 10px
+      margin: 0 2px
+      opacity: 0.5
+      width: 10px
+      &.active
+        opacity: 1
+        z-index: 1
+  .pagination
+    bottom: 45px
+    color: #ffffff
+    display: flex
+    left: 50%
+    position: absolute
+    transform: translate(-50%, 0)
+    .currentNumberSlide
+    .slash
+    .lastNumberSlide
+
+.trolo
+  max-width: 800px
+  margin: 0 auto
