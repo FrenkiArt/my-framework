@@ -4,14 +4,16 @@
   display: flex
   height: 100vh
   justify-content: center
-  left: -100%
+  left: 0
   max-width: 20vw
   min-width: 300px
   position: fixed
   top: 0
-  transition: left .3s
+  transform: translate(-100%, 0)
+  transition: transform .3s
   width: 100%
   z-index: 6
+
   ul
     list-style-type: none
     margin: 0
@@ -25,9 +27,23 @@
         font-size: 18px
         font-weight: 500
         letter-spacing: 0.45px
+
+  .overlay_for_sidebar
+    background-color: rgba(0,0,0,.5)
+    height: 100vh
+    left: 100%
+    opacity: 0
+    pointer-events: none
+    position: absolute
+    top: 0
+    transform: opacity .7s
+    width: 100vw
   &.show
-    left: 0%
-    box-shadow: 0px 0px 15px 15px rgba(0,0,0,.1)
+    transform: translate(0%, 0)
+    filter: drop-shadow(0px 0px 15px rgba(0,0,0,.1))
+    .overlay_for_sidebar
+      opacity: 1
+      pointer-events: auto
 
 .btn_menu
   width: 30px
@@ -43,8 +59,13 @@
       stroke-width: 5
       transition: d .3s
       will-change: d
-  &.show
+  /* &.show
     position: fixed
     top: 20px
     left: 20px
-    z-index: 7
+    z-index: 7 */
+.btn_close_sidebar
+  position: fixed
+  top: 20px
+  left: 20px
+  z-index: 7

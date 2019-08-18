@@ -16,6 +16,7 @@ export function myPopup(trigers) {
     });
 
     allPopup.forEach(element => {
+        element.style.display = 'block';
         if (element.querySelector('.popup__btn__close') != null) {
             element.querySelector('.popup__btn__close').addEventListener('click', closeThisPopup);
         }

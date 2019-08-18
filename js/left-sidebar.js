@@ -17,6 +17,8 @@ export function leftSidebar(btnToggle, sideBar) {
     sideBar.querySelectorAll('a').forEach(function (item) {
         item.addEventListener('click', hideSideBar);
     });
+    sideBar.querySelector('.btn_close_sidebar').addEventListener('click', hideSideBar);
+    sideBar.querySelector('.overlay_for_sidebar').addEventListener('click', hideSideBar);
 
     function hideSideBar(e) {
         btnToggle.classList.toggle('show');

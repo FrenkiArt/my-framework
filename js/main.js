@@ -7,11 +7,22 @@ import {
 import {
     myAccardion
 } from './accardion.js';
-import { lazyLoading } from './lazy-loading.js';
-import { myQwiz } from './qwiz.js';
-import { mySelect } from './my-select.js';
-import { beforeAfterHorizontal, beforeAfterVertical} from './before-after.js';
-
+import {
+    lazyLoading
+} from './lazy-loading.js';
+import {
+    myQwiz
+} from './qwiz.js';
+import {
+    mySelect
+} from './my-select.js';
+import {
+    beforeAfterHorizontal,
+    beforeAfterVertical
+} from './before-after.js';
+import {
+    leftSidebar
+} from './left-sidebar.js'
 
 /* start our popups */
 myPopup(document.querySelectorAll('.btn'));
@@ -26,6 +37,7 @@ mySelect(document.querySelector('.my-select3'));
 beforeAfterHorizontal(document.querySelector('.before-after-horizontal'));
 beforeAfterVertical(document.querySelector('.before-after-vertical'));
 
+leftSidebar(document.querySelector('#sidebarTriger'), document.querySelector('.side_bar'));
 
 
 

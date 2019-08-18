@@ -9,8 +9,13 @@
 
     &__content
         border: 1px solid purple
-        display: none
+        opacity: 0
         padding: 5px 10px
+        pointer-events: none
+        position: absolute
         &.open
-            display: block
             background-color: pink
+            opacity: 1
+            pointer-events: auto
+            position: relative
+            transition: opacity .3s
